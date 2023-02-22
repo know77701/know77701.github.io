@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+.intro{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+.main-container {
+    flex:2;
+    padding-left: 30px;
+}
+.main-container .intro-title{
+    cursor: default;
+    font-size: 10.5vw;
+ }
+ .intro-title span, .intro-desc span{
+    color: #555;
+ }
+.main-container .intro-desc{
+    font-size: 2.5vw;
+}
+.main-img{
+    flex:1.5;
+}
+.main-img img {
+    width: 90%;
+    filter: grayscale(100%);
+}
+.welcome{
+    height: 100vh;
+    background-color: #404146;
+    font-size: 3rem;
+    display: flex;
+    color: #d9e1e8;
+    justify-content: center;
+    flex-direction: column;
+}
+.welcome-container{
+    height: 100vh;
+}
+.welcome-title {
+    font-size: 10vw;
+}
+.welcome-desc{
+    font-size: vw;    
+}
+
+.protfolio {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.protfolio .portfolio-text{
+    font-size: 5.5vw;;
+}
+.github {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.github-text{
+    font-size: 15vw;
+}
+.github .github-chart{
+    width: 823px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.chart-container {
+    display: flex;
+    flex-direction: column;
+}
+.github .days{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+}
+.item{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 3s all ease;
+}
+.active:nth-child(4n){
+    background-color: #195b2c;
+}
+.github-chart:hover .active:nth-child(2n+1){
+    background-color: #195b2c;
+}
+.github-chart:hover .active:nth-child(2n){
+    background-color: #063f24;
+}
+.github-desc{
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    font-weight: 900;
+}
+
+.action {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.post{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    background-color: bisque;
+    display :flex;
+    height: 100vh;
+    align-items: center;
+}
+.about-text{
+    font-size: 5vw;
+}
+
+.portfolio-list, .post{
+    font-size: 5vw;
+    font-weight: 900;
+    background-color: #333;
+}
