@@ -1,0 +1,130 @@
+.user{
+   flex: 7;
+   padding: 30px;
+}
+.userTitleContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.userEditBtn{
+    border: none;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    width: 50px;
+    font-size: 17px;
+}
+.userCardContainer{
+    display: flex;
+    padding: 30px;
+    gap: 3em;
+}
+.showUser{
+    flex:2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.showTopContainer>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.showTopContainer{
+    display: flex;
+    align-items: center;
+}
+.showTopTitle{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.userName{
+    font-size: 20px;
+}
+.userJob{
+    font-size: 15px;
+    color: lightgray;
+}
+.showBottomContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.accountTitle, .contactTitle{
+    color: lightgray;
+    font-size: 15px; 
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.account{
+    padding: 20px 0;
+}
+.icon{
+    font-size: 15px !important;
+}
+.userIdContainer, .userCalendarContainer, .phoneContainer, .emailContainer, .addressContainer{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.userId, .userCalendar, .phone, .email, .home{
+    padding-left: 10px;
+}
+
+.contact{
+    padding-bottom: 20px;
+}
+.updateUser{
+    flex:5;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.leftContainer{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.updateTitle{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.updateContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.editTitle{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.editInputBox{
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.editPhoneNumber{
+    font-size: 17px;
+    color: lightgray;
+}
+.rightContainer{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editImg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+}

@@ -1,0 +1,34 @@
+.userList{
+    flex: 7;
+}
+.userListL{
+    border: none;
+    outline:none;
+}
+.userListName{
+    display: flex;
+    align-items: center;
+}
+.userImage{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.actionContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.editButton{
+    border: none;
+    color: white;
+    background-color: #3bb077;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.deleteButton{
+    cursor: pointer;
+    color: red;
+}

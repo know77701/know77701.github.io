@@ -1,0 +1,141 @@
+export const data = [
+  {
+    name: "Jan",
+    "Active User": 2400,
+    amt: 2400,
+  },
+  {
+    name: "Feb",
+    "Active User": 1398,
+  },
+  {
+    name: "Mar",
+    "Active User": 9800,
+  },
+  {
+    name: "Apr",
+    "Active User": 3908,
+  },
+  {
+    name: "May",
+    "Active User": 4800,
+  },
+  {
+    name: "Jun",
+    "Active User": 3800,
+  },
+  {
+    name: "Jul",
+    "Active User": 4300,
+  },
+  {
+    name: "Aug",
+    "Active User": 4300,
+  },
+  {
+    name: "Sep",
+    "Active User": 4300,
+  },
+  {
+    name: "Oct",
+    "Active User": 4300,
+  },
+  {
+    name: "Nov",
+    "Active User": 4300,
+  },
+  {
+    name: "Dec",
+    "Active User": 4300,
+  },
+];
+export const rows = [
+  {
+    id: 1,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 2,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 3,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 4,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 5,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 6,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 7,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 8,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 9,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 10,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+  {
+    id: 1,
+    img: "https://i2.avdbs.com/actor/a05/5987_n.jpg",
+    username: "Snow",
+    email: "know7701@gmail.com",
+    status: "active",
+    transaction: "$120,000",
+  },
+];
