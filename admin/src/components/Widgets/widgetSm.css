@@ -1,0 +1,44 @@
+.widgetSm{
+    flex: 1.5;
+    margin: 0 35px 50px 10px;
+    padding: 30px;
+    box-shadow: rgba(207, 157, 157, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.widgetTable{
+    width: 100%;
+    border-spacing: 20px;
+}
+.widgetTh{
+    text-align: left;
+}
+.widgetUser{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+}
+.widgetUserImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+    box-shadow: rgba(207, 157, 157, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.widgetBtn{
+    border: none;
+    border-radius: 10px;
+}
+.widgetDate,.widgetPrice{
+    font-weight: 300;
+}
+.widgetBtn.Approved{
+    background-color: #e5faf2;
+}
+.widgetBtn.Declined{
+    background-color: #fff0f1;
+}
+.widgetBtn.Pending{
+    background-color: #ebf1fe;
+}

@@ -1,0 +1,41 @@
+.widgetLg{
+    flex:0.5;
+    margin: 0 35px 50px 35px;
+    padding: 30px;
+    box-shadow: rgba(207, 157, 157, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.newMemberContainer{
+    display: flex;
+    flex-direction: column;
+}
+.widgetLgTitle{
+    margin-bottom: 30px;
+}
+.newMemberNameItem{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+.newMemberImg{
+    box-shadow: rgba(207, 157, 157, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.newMemberNameContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.newMemberName{
+    font-weight: 700;
+}
+.newMemberJob{
+    font-weight: 300;
+    color: gray;
+}
+.newMemberBtn{
+    display: flex;
+    align-items: center;
+}

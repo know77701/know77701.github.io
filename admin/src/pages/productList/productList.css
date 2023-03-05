@@ -1,15 +1,15 @@
-.userList{
+.productList{
     flex: 7;
 }
-.userListTopContainer{
+.productListTopContainer{
     display: flex;
     justify-content: space-between;
     padding: 25px 0;    
 }
-.userListTitle{
+.productListTitle{
     font-weight: 600;
 }
-.createUserBtn{
+.createProductBtn{
     border: none;
     background-color: teal;
     color: white;
@@ -17,30 +17,15 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.userListName{
+.productListContainer{
     display: flex;
     align-items: center;
 }
-.userImage{
+.productListImg{
     margin-right: 10px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
-.actionContainer{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.editButton{
-    border: none;
-    color: white;
-    background-color: #3bb077;
-    border-radius: 20%;
-    cursor: pointer;
-}
-.deleteButton{
-    cursor: pointer;
-    color: red;
-}
+/* userList 동일하게 적용 */ 

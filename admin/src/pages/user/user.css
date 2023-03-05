@@ -11,8 +11,8 @@
     border-radius: 5px;
     background-color: teal;
     color: white;
-    width: 50px;
     font-size: 17px;
+    cursor: pointer;
 }
 .userCardContainer{
     display: flex;
@@ -126,5 +126,28 @@
     object-fit: cover;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    
+}
+.fileUpload{
+    position: relative;
+}
+.fileUploadForm{
+    position: absolute;
+    border-radius: 15px;
+    right: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+.fileUploadForm::file-selector-button {
+    display: none;
+}
+.updateBtn{
+    border: none;
+    height: 3em;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
 }
