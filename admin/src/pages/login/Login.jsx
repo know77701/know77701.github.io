@@ -18,20 +18,21 @@ const Wrapper = styled.div`
     width: 25%;
     padding: 20px;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const Title = styled.h1`
     font-size: 24px;
     font-weight: 500;
 `
 
-const Form = styled.form`
-    display: flex;
-    flex-direction: column;
-`
+
 const Input = styled.input`
     min-width: 25%;
     margin: 10px 0;
     padding: 10px;
+    width: 100%;
 `
 
 const Button = styled.button`
@@ -40,49 +41,36 @@ const Button = styled.button`
     padding: 15px 20px;
     color: white;
     cursor: pointer;
+    background-color: teal;
+    margin: 20px 0;
     &:hover{
-        background-color: teal;
-        transition: all 1s ease;
+      background-color: #16a1a1;
+      color: lightgray;
+      transition: all 0.5s ease-in;
     }
-    margin-bottom: 10px;
-    &:disabled{
-      color: green;
-      cursor:not-allowed;
-    }
-`
-const Link = styled.a`
-  font-size: 12px;
-  cursor: pointer;
-`
-const Error = styled.span`
-  color:red;
 `
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const dispath = useDispatch();
-  const {isFetching,error} = useSelector(state =>state.user);
 
   const handleClick = (e) =>{
     e.preventDefault();
     login(dispath,{username,password});
-
   }
   return (
     <Container>
       <Wrapper>
         <Title >SIGN IN</Title>
-        <Form>
             <Input placeholder="username" 
               onChange={(e)=>setUsername(e.target.value)}
             ></Input>
             <Input placeholder="password"
-              type={"password"}
+              type="password"
               onChange={(e)=>setPassword(e.target.value)}
             ></Input>
-            <Button onClick={handleClick} disabled={isFetching}>LOGIN</Button>
-        </Form>
+            <Button onClick={handleClick}>LOGIN</Button>
       </Wrapper>
     </Container>
   )

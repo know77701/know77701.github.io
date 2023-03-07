@@ -1,17 +1,8 @@
 import axios from "axios";
 
 const BASB_URL = "http://localhost:5000/api/";
-const TOKEN = () => {
-  if (
-    JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user)
-      .currentUser.accessToken
-  ) {
-    return JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user)
-      .currentUser.accessToken;
-  } else {
-    return "";
-  }
-};
+const TOKEN = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user)
+  .currentUser.accessToken;
 
 export const publicRequest = axios.create({
   baseURL: BASB_URL,

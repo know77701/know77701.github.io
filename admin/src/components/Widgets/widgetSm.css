@@ -33,12 +33,12 @@
 .widgetDate,.widgetPrice{
     font-weight: 300;
 }
-.widgetBtn.Approved{
+.widgetBtn.approved{
     background-color: #e5faf2;
 }
-.widgetBtn.Declined{
+.widgetBtn.declined{
     background-color: #fff0f1;
 }
-.widgetBtn.Pending{
+.widgetBtn.pending{
     background-color: #ebf1fe;
 }

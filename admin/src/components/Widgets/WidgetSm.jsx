@@ -1,63 +1,51 @@
+import { useEffect, useState } from "react";
+import { userRequest } from "../../requestMethods";
 import "./widgetSm.css";
+import {format} from "timeago.js"
 
 export default function WidgetSm() {
+  const [orders, setOrders] = useState([]);
+
+  useEffect(()=>{
+    const getOrders = async () =>{
+      try{
+        const res = await userRequest.get("orders");
+        setOrders(res.data);
+      }catch{}
+    }
+    getOrders();
+  }, []);
+
   const Button = ({type}) =>{
     return <button className={"widgetBtn " + type}>{type}</button>
   }
+
   return (
     <div className="widgetSm">
       <h2 className="transactionTitle">Latest transactions</h2>
       <table className="widgetTable">
-        <tr className="widgetTr">
-          <th className="widgetTh">Customer</th>
-          <th className="widgetTh">Date</th>
-          <th className="widgetTh">Amount</th>
-          <th className="widgetTh">Status</th>
-        </tr>
-        <tr className="widgetTr">
+        <thead>
+          <tr className="widgetTr">
+            <th className="widgetTh">Customer</th>
+            <th className="widgetTh">Date</th>
+            <th className="widgetTh">Amount</th>
+            <th className="widgetTh">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        {orders.map((order)=>(
+        <tr className="widgetTr" key={order._id}>
           <td className="widgetUser">
-            <img className="widgetUserImg" src="https://cdn.psnews.co.kr/news/photo/202101/1460114_21613_573.png" alt="" />
-            <span className="widgetName">Susan Carol</span>
+            <span className="widgetName">{order.userId}</span>
           </td>
-          <td className="widgetDate">2023.03.05</td>
-          <td className="widgetPrice">$122.00</td>
+          <td className="widgetDate">{format(order.createdAt)}</td>
+          <td className="widgetPrice">$ {order.amount}</td>
           <td className="widgetStatus">
-            <Button type="Approved"/>
+            <Button type={order.status}/>
           </td>
         </tr>
-        <tr className="widgetTr">
-          <td className="widgetUser">
-          <img className="widgetUserImg" src="https://cdn.psnews.co.kr/news/photo/202101/1460114_21613_573.png" alt="" />
-            <span className="widgetName">Susan Carol</span>
-          </td>
-          <td className="widgetDate">2023.03.05</td>
-          <td className="widgetPrice">$122.00</td>
-          <td className="widgetStatus">
-            <Button type="Declined"/>
-          </td>
-        </tr>
-        <tr className="widgetTr">
-          <td className="widgetUser">
-          <img className="widgetUserImg" src="https://cdn.psnews.co.kr/news/photo/202101/1460114_21613_573.png" alt="" />
-            <span className="widgetName">Susan Carol</span>
-          </td>
-          <td className="widgetDate">2023.03.05</td>
-          <td className="widgetPrice">$122.00</td>
-          <td className="widgetStatus">
-            <Button type="Pending"/>
-          </td>
-        </tr>
-        <tr className="widgetTr">
-          <td className="widgetUser">
-          <img className="widgetUserImg" src="https://cdn.psnews.co.kr/news/photo/202101/1460114_21613_573.png" alt="" />
-            <span className="widgetName">Susan Carol</span>
-          </td>
-          <td className="widgetDate">2023.03.05</td>
-          <td className="widgetPrice">$122.00</td>
-          <td className="widgetStatus">
-            <Button type="Approved"/>
-          </td>
-        </tr>
+        ))}
+      </tbody>
       </table>
     </div>
   )

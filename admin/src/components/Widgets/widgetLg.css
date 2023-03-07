@@ -38,4 +38,9 @@
 .newMemberBtn{
     display: flex;
     align-items: center;
+    background-color: rgb(228, 225, 225);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 13px;
 }
