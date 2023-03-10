@@ -15,13 +15,13 @@ export default function ProductList() {
     },[dispatch])
 
     const handlerDelete = (id) => {
-        console.log(id);
         deleteProduct(id, dispatch);
     }
     const columns= [
         { field: '_id', headerName: 'ID', width: 270 },
         { field: 'product', 
-            headerName: 'product', width: 250, renderCell:(params)=>{
+            headerName: 'product', width: 250, 
+            renderCell:(params)=>{
             return (
                 <div className="productListContainer">
                     <img className="productListImg" src={params.row.img || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZi_qsId1E9CZ50LJR-9CiiSz86xHTfqG1f8XzeZhP3Lw9Lqx5HEddzPoNtmpuExDC88&usqp=CAU"} /> 
@@ -34,8 +34,8 @@ export default function ProductList() {
         { field: 'action',headerName: 'Action',width: 160, renderCell:(params) => {
             return (
                 <div className="actionContainer">
-                    <Link to={`/products/${params.row.id}`}><button className="editButton">Edit</button></Link>
-                    <DeleteOutlineIcon className="deleteButton" onClick={()=> handlerDelete(params.rows._id)}/>
+                    <Link to={`/products/${params.row._id}`}><button className="editButton">Edit</button></Link>
+                    <DeleteOutlineIcon className="deleteButton" onClick={()=> handlerDelete(params.row._id)}/>
                 </div>
             )
         }},

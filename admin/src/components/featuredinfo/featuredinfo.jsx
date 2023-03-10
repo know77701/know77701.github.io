@@ -12,8 +12,9 @@ export default function Featuredinfo() {
     const getIncome = async () => {
       try {
         const res = await userRequest.get("orders/income");
-        setIncome(res.data);
-        setPerc((res.data[1].total * 100) / res.data[0].total - 100);
+        const sortedData = res.data.sort((a, b) => a.total - b.total);
+        setIncome(sortedData);
+        setPerc((sortedData[0].total * 100) / sortedData[1].total - 100);
       } catch {}
     };
     getIncome();
@@ -23,7 +24,7 @@ export default function Featuredinfo() {
       <div className="featuredItem">
         <div className="featuredTitle">revanue</div>
         <div className="featuredMoneyContainer">
-            <span className="featuredMoney">${income[1]?.total}</span>
+            <span className="featuredMoney">${income[0]?.total}</span>
               {perc < 0 ? (
                 <span className="featuredMoneyRate">
                   %{Math.floor(perc)}{" "} <ArrowDownwardIcon className='featuredIcon'/> 
