@@ -3,6 +3,8 @@ const container = document.querySelector(".chart-container");
 const mainContainer = document.querySelector(".main-container");
 const mainImgContainer = document.querySelector(".main-img");
 const welcomeContainer = document.querySelector(".welcome-container");
+const qaContainer = document.querySelector(".qa-container");
+const wdContainer = document.querySelector(".wd-container");
 const list = [
   43, 44, 45, 46, 47, 83, 84, 85, 86, 87, 88, 124, 125, 126, 165, 166, 206, 207,
   247, 248, 249, 289, 290, 291, 292, 293, 250, 251, 252, 208, 50, 51, 52, 90,
@@ -28,5 +30,7 @@ window.addEventListener("scroll", () => {
   mainContainer.style.transform = `translateY(${-offsetY * 0.7}px)`;
   mainImgContainer.style.transform = `translateX(${offsetY * 0.5}px)`;
   welcomeContainer.classList = "action";
-  welcomeContainer.style.transform = `translateX(${offsetY * 0.1}px)`;
+  welcomeContainer.style.transform = `translateX(${offsetY * 0.3}px)`;
+  qaContainer.style.transform = `translateX(calc(200vh - ${offsetY}px))`;
+  wdContainer.style.transform = `translateX(calc(-150vh + ${offsetY}px))`;
 });

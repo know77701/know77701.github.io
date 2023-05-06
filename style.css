@@ -34,13 +34,12 @@ body{
     flex:1.5;
 }
 .main-img img {
-    width: 90%;
+    width: 80%;
     filter: grayscale(100%);
 }
 .welcome{
     height: 100vh;
     background-color: #404146;
-    font-size: 3rem;
     display: flex;
     color: #d9e1e8;
     justify-content: center;
@@ -50,12 +49,33 @@ body{
     height: 100vh;
 }
 .welcome-title {
-    font-size: 10vw;
-}
-.welcome-desc{
-    font-size: vw;    
+    font-size: 15vw;
 }
 
+.job-container{
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.qa-title, .wd-title {
+    font-size: 10vw;
+    color: #555;
+    padding-bottom: 10vh;
+}
+.qa-title span, .wd-title span {
+    color: white;
+}
+.qa-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.wd-container{
+    display: flex;
+}
 .protfolio {
     background-color: #333;
     height: 100vh;
@@ -67,8 +87,34 @@ body{
 .protfolio .portfolio-text{
     font-size: 5.5vw;;
 }
+.projectListContainer{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 100%;
+}
+
+.frontEndPrj{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.backEndPrj{
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.springPrj{
+    padding: 20px;
+    flex: 1; 
+}
+
+
 .github {
-    background-color: #333;
+    background-color: #404146;
     display: flex;
     flex-direction: column;
     align-items: center;
