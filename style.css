@@ -13,8 +13,8 @@ body{
     display: flex;
     height: 100vh;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #D2D2D2;
 }
 .main-container {
     flex:2;
@@ -25,7 +25,7 @@ body{
     font-size: 10.5vw;
  }
  .intro-title span, .intro-desc span{
-    color: #555;
+    color: #7E7E7E;
  }
 .main-container .intro-desc{
     font-size: 2.5vw;
@@ -37,47 +37,50 @@ body{
     width: 80%;
     filter: grayscale(100%);
 }
+
 .welcome{
     height: 100vh;
-    background-color: #404146;
+    background-color: #333;
     display: flex;
-    color: #d9e1e8;
+    color: #D2D2D2;
     justify-content: center;
     flex-direction: column;
+    opacity: 2.0;
 }
+
 .welcome-container{
     height: 100vh;
 }
 .welcome-title {
-    font-size: 15vw;
+    font-size: 13vw;
 }
 
 .job-container{
     height: 100vh;
-    background-color: #333;
+    background-color: #444;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.qa-title, .wd-title {
+.stack-title {
     font-size: 10vw;
     color: #555;
     padding-bottom: 10vh;
 }
-.qa-title span, .wd-title span {
+.stack-title span {
     color: white;
 }
-.qa-container{
+.stack-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-.wd-container{
-    display: flex;
-}
+
+
+
 .protfolio {
-    background-color: #333;
+    background-color: #555;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -114,7 +117,7 @@ body{
 
 
 .github {
-    background-color: #404146;
+    background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,7 +194,7 @@ body{
 }
 
 .about{
-    background-color: bisque;
+    background-color: #222;
     display :flex;
     height: 100vh;
     align-items: center;
